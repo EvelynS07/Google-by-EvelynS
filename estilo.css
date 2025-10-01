@@ -1,0 +1,207 @@
+/* Reset Básico e Fontes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #202124;
+    background-color: #fff;
+}
+
+/* --- Cabeçalho --- */
+header {
+    padding: 10px 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 9px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #202124;
+    font-size: 13px;
+    padding: 5px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.apps-icon img {
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+}
+
+.profile-pic img {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* --- Corpo Principal --- */
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.google-logo {
+    width: 290px;
+    height: 95px;
+    margin: 30px;
+    margin-top: 0px;
+}
+
+.search-form {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.search-input-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    padding: 0 14px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px 1px rgba(64,60,67,.16);
+    transition: box-shadow 0.3s ease;
+}
+
+.search-input-container input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 10px 0;
+    background: none;
+}
+
+/* Estilo base para os ícones dentro da barra de pesquisa (otimização) */
+.search-input-container img {
+    cursor: pointer;
+    vertical-align: middle; 
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.teclas-icon{
+    width: 25px;
+    height: 25px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.mic-icon{
+    width: 22px;
+    height: 22px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.pesquisa-icon{
+    width: 18px;
+    height: 18px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+
+.buttons button {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 14px;
+    padding: 0 16px;
+    height: 36px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.buttons button:hover {
+    background-color: #f1f3f4;
+    border: 1px solid #dadce0;
+}
+
+/* --- Rodapé --- */
+footer {
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 15px 30px;
+    font-size: 15px;
+    color: black;
+}
+
+.footer-country {
+    border-bottom: 1px solid #dadce0;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;  /* Adiciona alinhamento vertical dos itens (se houver altura variável) */
+}
+
+.footer-links ul li {
+    margin-right: 25px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: black;  
+    font-size: 14px;
+    display: inline-block;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Efeito de foco quando a caixa está selecionada */
+.search-input-container:focus-within {
+    box-shadow: 0 3px 8px 1px rgba(64, 60, 67, 0.24); /* Sombra mais forte */
+    border-color: transparent; /* Remove a borda original */
+}
